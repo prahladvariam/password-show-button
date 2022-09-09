@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 50%;
+  margin: auto;
 }
 
 .App-logo {
@@ -27,6 +29,9 @@
 .App-link {
   color: #61dafb;
 }
+html, body {
+  height: 100%;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +40,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.PassContainer {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+.PassInput {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.PassButton {
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  right: 0px;
+  z-index: 2;
+  border: none;
+  top: 2px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: #1e90ff;
+  transform: translateX(2px);
 }
